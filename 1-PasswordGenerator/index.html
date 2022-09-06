@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Random <span class="span">Password Generator</span></h1>
+      <div class="box">
+        <h1 class="password">Password</h1>
+        <div class="btn-block char-length">9</div>
+        <div class="btn btn-block generate-btn" onclick="generate();">
+          Generate
+        </div>
+        <input
+          type="range"
+          value="9"
+          onclick="generate();"
+          id="input"
+          min="5"
+          max="20"
+          style="width: 100%"
+        />
+        <p class="info">Slide to set number of characters</p>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

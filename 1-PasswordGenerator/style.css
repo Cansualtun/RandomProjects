@@ -1,0 +1,132 @@
+ * {
+  margin: 0;
+  padding 0; 
+  font-family: Consolas,sans-serif;
+  user-select: none;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fae5df;
+}
+.span {
+  color: #0075ff;
+  text-shadow: 1px 1px #141850;
+}
+.title {
+    text-shadow: 1px 1px #141850;
+    margin-left:50px;
+}
+.container {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box {
+  width: 500px;
+  height: 300px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  box-shadow: -4px -4px 10px rgba(250, 229, 223, 1),
+    inset 4px 4px 10px rgba(0.9, 0.9, 0.9, 0.9),
+    inset -4px -4px 10px rgba(250, 229, 223, 1),
+    4px 4px 10px rgba(0.9, 0.9, 0.9, 0.9);
+  padding-top: 20px;
+  padding-left: 30px;
+}
+.btn-block {
+  display: inline-block;
+  height: 15px;
+  width: fit-content;
+  background-color: #0075ff;
+  padding: 10px 20px;
+  color: #fff;
+}
+.generate-btn {
+  cursor: pointer;
+  color: #fae5df;
+  background-color: #303179;
+  font-size: 24px;
+  display: inline-block;
+  border-radius: 8px;
+  margin-left: 100px;
+}
+.generate-btn:hover {
+  background-color: cadetblue;
+}
+.password {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #0075ff;
+  color: #0075ff;
+  font-size: 32px;
+  text-align: center;
+}
+input[type="range"] {
+  height: 35px;
+  cursor: pointer;
+}
+.info {
+  text-align: center;
+  margin-top: -5px;
+  color: #0075ff;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top:10px;
+}
+ .btn-block{
+    display: inline-block;
+    height: 15px;
+    width: fit-content;
+    background-color: #0075ff;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+  }.inputBox {
+    position: relative;
+    width:450px;
+}
+.inputBox h2 {
+    font-size:28px;
+    color : #141850;
+}
+.input:hover {
+    color:cadetblue;
+}
+::placeholder{
+    color:#f5cac2;
+}
+#input {
+    position : relative;
+    width:400px;
+    height:60px;
+    border-radius: 10px;
+    margin-top:20px;
+    margin-left:-10px;
+    background: transparent;
+    outline:none;
+    letter-spacing: 4px;
+    box-sizing:border-box;
+    color:#141850;
+    box-shadow: -4px -4px 10px rgba(250, 229, 223, 1) , inset 4px 4px 10px rgba(0,0,0,0.9),
+    inset -4px -4px 10px rgba(250, 229, 223, 1), 4px 4px 10px rgba(0,0,0,0.9);
+}
+inputBox #btn:active {
+    background-color: #141850;
+    transform: scale(.98); 
+
+}
+.btn-block{
+    display: inline-block;
+    height: 15px;
+    width: fit-content;
+    background-color: #0075ff;
+    padding: 20px 30px;
+    color: #fff;
+    margin-top:20px;
+    margin-left:40px;
+  }
