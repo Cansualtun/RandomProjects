@@ -28,7 +28,12 @@ const dropdown = document.querySelector(".dropdown");
 const resultsWrapper = document.querySelector(".results");
 const onInput = async (event) => {
   const movies = await fetchData(event.target.value);
-
+  //Yazılan film silindiği zaman çalışacak fonksiyon
+  if (!movies.length) {
+    dropdown.classList.remove("is-active");
+    return;
+  }
+  resultsWrapper.innerHTML = "";
   //Movie Rendering
   dropdown.classList.add("is-active");
 
@@ -39,7 +44,17 @@ const onInput = async (event) => {
   <img src="${movie.Poster}"/>
   ${movie.Title}
   `;
+    option.addEventListener("click", (event) => {
+      dropdown.classList.remove("is-active");
+      input.value = movie.Title;
+    });
     resultsWrapper.appendChild(option);
   }
 };
 input.addEventListener("input", debounce(onInput, 500));
+//Root elementleri dışında başka classlarla iletişime geçildiği an dropdown kapanışı
+document.addEventListener("click", (event) => {
+  if (!root.contains(event.target)) {
+    dropdown.classList.remove("is-active");
+  }
+});
